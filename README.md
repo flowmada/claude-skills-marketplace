@@ -2,47 +2,30 @@
 
 Private marketplace for personal Claude Code skills.
 
-## Usage
+> **Getting started?** See [SETUP.md](SETUP.md) for installation instructions.
 
-### Register the marketplace
+---
 
-```bash
-/plugin marketplace add flowmada/claude-skills-marketplace
-```
+## Skills
 
-### Install skills
+### git-commit
 
-```bash
-/plugin install flowmada-skills@claude-skills-marketplace --scope user
-```
+Streamlined git commit workflow with explicit file staging.
 
-### Update skills
+**Trigger:** "commit", "stage changes", "save to git"
 
-```bash
-/plugin marketplace update
-/plugin update flowmada-skills@claude-skills-marketplace
-```
+**Features:**
+- Concision over grammar in commit messages
+- Two-step workflow: stage first, then commit (allows review)
+- Never uses `git add -A` or `git add .` - only stages explicitly modified files
+- Excludes non-code files (images, documentation, settings)
 
-## Structure
+**Process:**
+1. Lists specific files modified in the session
+2. Stages with explicit paths
+3. Shows staged files for review
+4. Asks for confirmation before committing
 
-```
-claude-skills-marketplace/
-├── .claude-plugin/
-│   └── marketplace.json    # Marketplace catalog
-├── skills-plugin/
-│   ├── .claude-plugin/
-│   │   └── plugin.json     # Plugin manifest
-│   ├── skills/             # Published skills
-│   └── README.md
-└── README.md
-```
+---
 
-## Publishing Skills
-
-Skills are published from `~/.claude/skills/` using the `publish-skill` skill:
-
-```
-"publish ios-unit-testing"
-```
-
-This syncs the skill folder to this marketplace and pushes to GitHub.
+*More skills coming soon. Use `publish <skill-name>` to add skills from `~/.claude/skills/`.*
