@@ -1,0 +1,5 @@
+{
+  "name": "git-commit",
+  "version": "1.0.0",
+  "description": "Concise git commits with staged file review"
+}

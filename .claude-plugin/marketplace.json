@@ -5,9 +5,14 @@
   },
   "plugins": [
     {
-      "name": "flowmada-skills",
-      "source": "./skills-plugin",
-      "description": "Personal iOS/Swift development and testing skills"
+      "name": "git-commit",
+      "source": "./git-commit",
+      "description": "Concise git commits with staged file review"
+    },
+    {
+      "name": "test-planning",
+      "source": "./test-planning",
+      "description": "Three-phase test planning workflow: overview, analysis, specific tests"
     }
   ]
 }
