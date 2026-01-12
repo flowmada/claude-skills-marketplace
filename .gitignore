@@ -4,3 +4,7 @@
 # Editor
 *.swp
 *~
+
+# Old/draft skill files
+OLD_SKILL.md
+*-SKILL.md
