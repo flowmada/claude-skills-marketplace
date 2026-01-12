@@ -2,23 +2,25 @@
 
 ## Installation
 
-### Register the marketplace
+### 1. Register the marketplace
 
-```bash
+```
 /plugin marketplace add flowmada/claude-skills-marketplace
 ```
 
-### Install skills
+### 2. Install plugins
 
-```bash
-/plugin install flowmada-skills@claude-skills-marketplace --scope user
+```
+/plugin install git-commit@claude-skills-marketplace --scope user
+/plugin install test-planning@claude-skills-marketplace --scope user
 ```
 
-### Update skills
+### 3. Update plugins
 
-```bash
+```
 /plugin marketplace update
-/plugin update flowmada-skills@claude-skills-marketplace
+/plugin update git-commit@claude-skills-marketplace
+/plugin update test-planning@claude-skills-marketplace
 ```
 
 ## Repository Structure
@@ -26,25 +28,22 @@
 ```
 claude-skills-marketplace/
 ├── .claude-plugin/
-│   └── marketplace.json    # Marketplace catalog
-├── skills-plugin/
+│   └── marketplace.json
+├── git-commit/
 │   ├── .claude-plugin/
-│   │   └── plugin.json     # Plugin manifest
-│   ├── skills/             # Published skills
-│   └── README.md
-├── README.md               # Skills documentation
-└── SETUP.md                # This file
+│   │   └── plugin.json      # v1.0.0
+│   └── skills/
+│       └── git-commit/
+├── test-planning/
+│   ├── .claude-plugin/
+│   │   └── plugin.json      # v1.0.0
+│   └── skills/
+│       ├── test-plan-01-overview/
+│       ├── test-plan-02-analysis/
+│       └── test-plan-03-specific-tests/
+├── README.md
+└── SETUP.md
 ```
-
-## Publishing Skills
-
-Skills are published from `~/.claude/skills/` using the `publish-skill` skill:
-
-```
-"publish ios-unit-testing"
-```
-
-This syncs the skill folder to this marketplace and pushes to GitHub.
 
 ## Private Repo Access
 
