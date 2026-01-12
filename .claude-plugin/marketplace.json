@@ -1,0 +1,13 @@
+{
+  "name": "claude-skills-marketplace",
+  "owner": {
+    "name": "flowmada"
+  },
+  "plugins": [
+    {
+      "name": "flowmada-skills",
+      "source": "./skills-plugin",
+      "description": "Personal iOS/Swift development and testing skills"
+    }
+  ]
+}
