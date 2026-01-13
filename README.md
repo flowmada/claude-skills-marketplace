@@ -1,4 +1,4 @@
-# claude-skills-marketplace
+# claude-skills-flowmada
 
 Private marketplace for personal Claude Code skills.
 
