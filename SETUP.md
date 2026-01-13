@@ -5,28 +5,28 @@
 ### 1. Register the marketplace
 
 ```
-/plugin marketplace add flowmada/claude-skills-marketplace
+/plugin marketplace add flowmada/claude-skills-flowmada
 ```
 
 ### 2. Install plugins
 
 ```
-/plugin install git-commit@claude-skills-marketplace --scope user
-/plugin install test-planning@claude-skills-marketplace --scope user
+/plugin install git-commit@claude-skills-flowmada --scope user
+/plugin install test-planning@claude-skills-flowmada --scope user
 ```
 
 ### 3. Update plugins
 
 ```
 /plugin marketplace update
-/plugin update git-commit@claude-skills-marketplace
-/plugin update test-planning@claude-skills-marketplace
+/plugin update git-commit@claude-skills-flowmada
+/plugin update test-planning@claude-skills-flowmada
 ```
 
 ## Repository Structure
 
 ```
-claude-skills-marketplace/
+claude-skills-flowmada/
 ├── .claude-plugin/
 │   └── marketplace.json
 ├── git-commit/
